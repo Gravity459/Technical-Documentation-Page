@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <nav id="navbar">
+        <div id="links">
+
+        <header>
+            <h1>C Documentation</h1>
+        </header>
+        
+        <hr><a class="nav-link" href="#Introduction_to_C_Programming">Introduction to C Programming</a>
+        <hr><a class="nav-link" href="#History_of_C">History Of C</a>
+        <hr><a class="nav-link" href="#First_Program_In_C">First Program In C</a>
+        <hr><a class="nav-link" href="#Variables_&_Constants">Variables & Constants</a>
+        <hr><a class="nav-link" href="#Data_Types">Data Types</a>
+        <hr><a class="nav-link" href="#Input/Output_in_C">Input/Output in C</a><hr>
+        </div>
+
+    </nav>
+
+    <main id="main-doc">
+        <section id="Introduction_to_C_Programming" class="main-section">
+            <header>
+                <h1>Introduction to C Programming</h1>
+            </header>
+            <p>
+                C is a general-purpose high level language that was originally developed 
+                by Dennis Ritchie for the Unix operating system. It was first implemented 
+                on the Digital Eqquipment Corporation PDP-11 computer in 1972. The Unix operating 
+                system and virtually all Unix applications are written in the C language.
+                The main features of the C language include low-level memory access, 
+                a simple set of keywords, and a clean style, these features make C language 
+                suitable for system programmings like an operating system or compiler development. 
+            </p>
+            <p>
+                The Unix operating system and virtually all Unix applications are 
+                written in the C language. C has now become a widely used professional 
+                language for various reasons.
+
+                <ul>
+                    <li>Easy to learn</li>
+                    <li>Structured language</li>
+                    <li>Produces efficient programs</li>
+                    <li>Has the ability to handle low-level activities</li>
+                    <li>It can also be compiled on a large variety of computers</li>
+                </ul>
+            </p> 
+        </section>
+        
+    </br>
+
+        <section id="History_of_C" class="main-section">
+            <header>
+                <h1>History of C</h1>
+            </header>
+            <p>
+                The C programming language came out of <strong><u>Bell Labs</u></strong> in the early 1970s. 
+                According to the Bell Labs paper The Development of the C Language by
+                <strong><u>Dennis Ritchie</u></strong>, <strong>"The C programming language was devised in the early 
+                1970s as a system implementation language for the nascent Unix operating 
+                system. Derived from the typeless language BCPL, it evolved a type 
+                structure; created on a tiny machine as a tool to improve a meager 
+                programming environment."</strong> 
+            </p>
+            <p>
+                Originally, Ken Thompson, a Bell Labs employee, desired to make a p
+                rogramming language for the new Unix platform. Thompson 
+                modified the BCPL system language and created B. However, not many utilities 
+                were ever written in B due to its slow nature and inability to take advantage 
+                of PDP-11 features in the operating system. This led to Ritchie improving on B, 
+                and thus creating C.
+            </p>
+        </section>
+        
+        <section id="First_Program_In_C" class="main-section">
+            <header>
+                <h1>First Program In C</h1>
+            </header>
+            <p>
+                The first program for every person to implement in any
+                new language is the one and only " <strong><u>Hello World</u></strong> "
+                program. In C, this program is written with a pre-defined function called 
+                printf() which outputs anything you want to print onto the console. The 
+                code for Hello World is given below:
+            </p>
+            <code>
+                int main(){                 
+                    printf("Hello World");  
+                }                           
+            </code>
+        </section>
+        
+        <section id="Variables_&_Constants" class="main-section">
+            <header>
+                <h1>Variables & Constants</h1>
+            </header>
+            <h2>Variables</h2>
+            <p>
+                In programming, a variable is a container (storage area) to hold data. 
+                To indicate the storage area, each variable should be given a unique 
+                name (identifier). Variable names are just the symbolic representation 
+                of a memory location. For example:
+            </p>
+            <code>
+                int playerScore = 95;
+            </code>
+            <p>
+                Here, playerScore is a variable of int type. Here, the variable is assigned 
+                an integer value 95. 
+            </br>
+            </br>
+                The value of a variable can be changed, hence the name variable.
+            </p>
+            <code>
+                char ch = 'a';
+                // some code
+                ch = 'l';
+            </code>
+            <h2>Constants</h2>
+            <p>
+                If you want to define a variable whose value cannot be changed, 
+                you can use the const keyword. This will create a constant. For example,
+            </p>
+            <code>
+                const double PI = 3.14;
+            </code>
+            <p>
+                Notice, we have added keyword const. 
+                Here, PI is a symbolic constant; its value cannot be changed.
+            </p>
+            <code>
+                const double PI = 3.14;
+                PI = 2.9; //Error
+            </code>
+        </section>
+        
+        <section id="Data_Types" class="main-section">
+            <header>
+                <h1>Data Types</h1>
+            </header>
+            <p>
+                In this tutorial, you will learn about basic data 
+                types such as int, float, char etc. in C programming.
+            </p>
+            <p>
+                In C programming, data types are declarations for 
+                variables. This determines the type and size of data 
+                associated with variables. For example,
+            </p>
+            <code>
+                int myVar;
+            </code>
+            <p>
+                There are other variables too which include:
+                <ul>
+                    <li>int</li>
+                    <li>float and double</li>
+                    <li>char</li>
+                    <li>void</li>
+                    <li>short and long</li>
+                    <li>signed and unsigned</li>
+                </ul>
+            </p>  
+        </section>
+        
+        <section id="Input/Output_in_C" class="main-section">
+            <header>
+                <h1>Input/Output in C</h1>
+            </header>
+            <h2>C Output</h2>
+            <p>
+                In C programming, printf() is one of the main output function. 
+                The function sends formatted output to the screen. For example,
+            </p>
+            <code>
+                <span id="linebreaker">
+                    #include <stdio.h>   
+                </span>
+                
+                <span id="linebreaker">
+                    int main() {
+                </span>
+
+                <span id="linebreaker">
+                    // Displays the string inside quotations 
+                </span>
+                
+                <span id="linebreaker">
+                   printf("C Programming");
+                </span>
+
+                <span id="linebreaker">
+                    return 0;
+                </span>
+                        
+                <span id="linebreaker">
+                    }
+                </span>        
+            </code>
+        </section>
+    </main>
+</body>
+</html>
